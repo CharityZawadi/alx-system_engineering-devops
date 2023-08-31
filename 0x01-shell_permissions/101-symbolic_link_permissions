@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Change the owner and group owner of _hello
-
-# Assuming _hello is a symbolic link in the working directory
-
-sudo chown vincent:staff _hello
+chown-h vincent:staff_hello
