@@ -1,2 +1,7 @@
 #!/bin/bash
-chown-h Vincent staff_hello
+
+# Change the owner and group owner of _hello
+
+# Assuming _hello is a symbolic link in the working directory
+
+sudo chown vincent:staff _hello
