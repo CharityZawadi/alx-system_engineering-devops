@@ -1,2 +1,3 @@
 #!/bin/bash
--type d -exec chmod +rwx {} +
+chmod -R ugo+X .
+
