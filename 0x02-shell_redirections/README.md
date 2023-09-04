@@ -23,7 +23,7 @@ This script displays the third line of the file 'iacta' which should be in the w
 This script creates a file named '*\'Best School'\*0*****:)' containing the text Best School ending with a new line.
 
 # Task 8
-This script writes the result of the command ls -la into the file 'ls_cwd_content'. If the file already exists, it will be overwritten; otherwise, it will be created.
+This script writes the result of the command 'ls -la' into the file 'ls_cwd_content'. If the file already exists, it will be overwritten; otherwise, it will be created.
 
 # Task 9
 This script duplicates the last line of the file 'iacta' which should be in the working directory.
@@ -66,3 +66,32 @@ This script reverses its input.
 
 # Task 22
 This script reads lines of text and prints only lines that are palindromes. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
+
+# Task 23 (Advanced)
+Write a command that finds all empty files and directories in the current directory and all sub-directories.
+Only the names of the files and directories should be displayed (not the entire path).
+Hidden files should be listed.
+One file or directory name per line.
+The listing should end with a new line.
+You are not allowed to use basename, grep, egrep, fgrep, or rgrep.
+
+# Task 24 (Advanced)
+Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+Hidden files should be listed.
+Only regular files (not directories) should be listed.
+The names of the files should be displayed without their extensions.
+The files should be sorted by byte values, but case-insensitive.
+One file name per line.
+The listing should end with a new line.
+You are not allowed to use basename, grep, egrep, fgrep, or rgrep.
+
+# Task 25 (Advanced)
+Create a script that decodes acrostics that use the first letter of each line.
+The 'decoded' message has to end with a new line.
+You are not allowed to use grep, egrep, fgrep, or rgrep.
+
+# Task 26 (Advanced)
+Write a script that parses web server logs in TSV format as input and displays the 11 hosts or IP addresses that made the most requests.
+Order the hosts by the number of requests, with the most active host or IP at the top.
+The format includes host (or IP address), logname, time (in seconds since 1970), method (HTTP method), URL (requested path), response (HTTP response code), and bytes (number of bytes in the reply).
+You are not allowed to use grep, egrep, fgrep, or rgrep.
