@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -lt | tail -n +2 | head -n 10 | cut -d ' ' -f 9-
+
