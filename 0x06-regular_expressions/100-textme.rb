@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
-input = ARGV[0]
-regex = /(?<=\[from:)(.*?)(?=\])|(?<=\[to:)(.*?)(?=\])|(?<=\[flags:)(.*?)(?=\])/
-matches = input.scan(regex)
-puts "#{matches[0][0]},#{matches[1][0]},#{matches[2][0]}"
+log_line = ARGV[0]
+
+sender = log_line.scan(/\[from:(.*?)\]/).flatten[0]
+receiver = log_line.scan(/\[to:(.*?)\]/).flatten[0]
+flags = log_line.scan(/\[flags:(.*?)\]/).flatten[0]
+
+puts "#{sender},#{receiver},#{flags}"
 
