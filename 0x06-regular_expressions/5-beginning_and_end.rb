@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-input = ARGV[0]
-regex = /^h.n$/
-puts input.scan(regex).join
+arg = ARGV[0]
+
+if arg =~ /^h.n$/
+  puts arg
+end
 
