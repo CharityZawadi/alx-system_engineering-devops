@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-input = ARGV[0]
-regex = /[A-Z]/
-puts input.scan(regex).join
+arg = ARGV[0]
+
+if arg.match?(/[A-Z]+/)
+    puts arg.scan(/[A-Z]+/).join
+end
 
