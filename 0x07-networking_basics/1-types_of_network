@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # 1. Types of network
 LAN (Local Area Network) connect local devices together within a single location or site.
 

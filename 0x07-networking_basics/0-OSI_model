@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 OSI (Open Systems Interconnection) is a conceptual model that describes the functions of a telecommunication system without regard to its underlying internal structure and technology. It is organized into seven layers, each responsible for specific tasks:
 
 Physical Layer: Deals with physical connections and transmission of raw data over a communication channel.
