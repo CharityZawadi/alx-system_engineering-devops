@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Function to handle incoming connections
+handle_connection() {
+    while true; do
+        # Read data from the connection
+        read data
+        # Print the received data
+        echo "Received: $data"
+    done
+}
+
+# Main function
+main() {
+    # Start listening on port 98
+    nc -l 127.0.0.1 98 | handle_connection
+}
+
+# Execute the main function
+main
+
