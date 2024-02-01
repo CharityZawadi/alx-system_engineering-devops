@@ -1,0 +1,12 @@
+OSI (Open Systems Interconnection) is a conceptual model that describes the functions of a telecommunication system without regard to its underlying internal structure and technology. It is organized into seven layers, each responsible for specific tasks:
+
+Physical Layer: Deals with physical connections and transmission of raw data over a communication channel.
+Data Link Layer: Handles data framing, error detection, and correction within the network.
+Network Layer: Manages routing, addressing, and logical transmission of data packets across networks.
+Transport Layer: Ensures reliable end-to-end communication, segmenting data, and managing flow control.
+Session Layer: Establishes, maintains, and synchronizes communication sessions between devices.
+Presentation Layer: Translates, encrypts, or compresses data into a format suitable for transmission.
+Application Layer: Provides network services directly to end-users and application processes.
+The OSI model is organized from the lowest level (Physical Layer) to the highest level (Application Layer), with each layer building upon the functionalities of the lower layers.
+
+
