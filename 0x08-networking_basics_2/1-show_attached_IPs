@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script to display all active IPv4 IPs on the machine
+
+# Method 1: Using ip command
+ip -4 -o addr show scope global | awk '{print $4}'
+
+# Method 2: Using ifconfig command (deprecated)
+# ifconfig | grep 'inet ' | awk '{print $2}'
+
