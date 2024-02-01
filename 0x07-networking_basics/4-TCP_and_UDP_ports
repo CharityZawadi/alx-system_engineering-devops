@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Display active internet connections (only servers)
+echo "Active Internet connections (only servers)"
+echo "Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name"
+netstat -tulnp | awk 'NR > 2 {print $1 "\t" $2 "\t" $4 "\t" $5 "\t" $6 "\t" $7}'
+echo
+
+# Display active UNIX domain sockets (only servers)
+echo "Active UNIX domain sockets (only servers)"
+echo "Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path"
+netstat -xln | awk 'NR > 2 {print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6 "\t" $7 "\t" $8}'
+
