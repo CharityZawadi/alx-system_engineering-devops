@@ -24,10 +24,10 @@ server {
 ' > /etc/nginx/sites-available/redirect_me
 
 # Create a symbolic link to enable the site configuration
-ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
 
 # Remove the default configuration
-rm /etc/nginx/sites-enabled/default
+rm -f /etc/nginx/sites-enabled/default
 
 # Reload Nginx to apply changes
 service nginx reload
