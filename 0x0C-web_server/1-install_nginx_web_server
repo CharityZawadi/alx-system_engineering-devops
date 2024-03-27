@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-# This script installs nginx web server and configures it to meet the requirements
+# This script installs and configures Nginx web server
 
 # Install nginx
 apt-get update
 apt-get install -y nginx
 
-# Configure nginx to listen on port 80 and return "Hello World!" at root
-echo "Hello World!" > /usr/share/nginx/html/index.html
+# Ensure nginx is listening on port 80
+sed -i '/listen 80 default_server;/c\listen 80;' /etc/nginx/sites-available/default
 
-# Restart nginx (without using systemctl)
-kill -HUP $(pgrep nginx)
+# Restart nginx
+service nginx restart
+
+# Create a page containing "Hello World!"
+echo "Hello World!" > /var/www/html/index.html
