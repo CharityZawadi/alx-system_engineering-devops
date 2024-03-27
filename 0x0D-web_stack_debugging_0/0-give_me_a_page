@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Debugging Apache to return a page containing "Hello Holberton"
+
+# Update package lists
+apt-get update
+
+# Install Apache
+apt-get install -y apache2
+
+# Ensure Apache is running
+service apache2 start
+
+# Create index.html file with desired content
+echo "Hello Holberton" > /var/www/html/index.html
+
+# Restart Apache to apply changes
+service apache2 restart
